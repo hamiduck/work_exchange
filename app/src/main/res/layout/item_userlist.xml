@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="95dp">
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:id="@+id/userimagebox"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/userimageview"
+                android:layout_width="60dp"
+                android:scaleType="centerCrop"
+                android:layout_height="60dp"
+                android:src="@mipmap/ic_launcher_round"
+                ></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/userimagebox"
+            android:text="呱呱呱"
+            android:textColor="#000000"
+            android:textSize="20sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:textSize="15sp"
+            android:id="@+id/chatcontext"
+            android:layout_toRightOf="@id/userimagebox"
+            android:layout_below="@+id/username"
+            android:layout_marginLeft="20dp"
+            android:text="How are you">
+
+        </TextView>
+        <TextView
+            android:layout_width="80dp"
+            android:textSize="12sp"
+            android:text="10:43Am"
+            android:id="@+id/chattime"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="75dp"
+            android:layout_toRightOf="@id/username"
+            android:layout_height="40dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="#CDC7C7"
+            android:id="@+id/chatline"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/userimagebox"
+            android:layout_below="@id/userimagebox"
+            android:text="hello">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

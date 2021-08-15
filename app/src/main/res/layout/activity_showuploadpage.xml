@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_item"
+                android:layout_width="match_parent"
+                android:layout_height="285dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="282dp"
+                    android:elevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="280dp">
+
+                        <ImageView
+                            android:id="@+id/show_Publish_Image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_alignParentTop="true"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/upload_icon"/>
+
+                        <TextView
+                            android:id="@+id/show_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_Publish_Image1"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="[ 本 ] "
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/show_Type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_Title"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="："
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relativelayout_item">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/example_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="區域" />
+
+                        <TextView
+                            android:id="@+id/show_Area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_toRightOf="@+id/example_area"
+                            android:text=":" />
+
+                        <TextView
+                            android:id="@+id/example_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/example_area"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:text="地址" />
+
+                        <TextView
+                            android:id="@+id/show_HomestayAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_Area"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/example_area"
+                            android:text=":" />
+
+                        <TextView
+                            android:id="@+id/example_bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/example_location"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:text="提供零用金" />
+
+                        <TextView
+                            android:id="@+id/show_Bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_HomestayAddress"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/example_area"
+                            android:text=":" />
+
+                        <TextView
+                            android:id="@+id/example_serving"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/example_bonus"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:text="是否供餐" />
+
+                        <TextView
+                            android:id="@+id/show_Serving"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_Bonus"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/example_area"
+                            android:text=":" />
+
+                        <TextView
+                            android:id="@+id/example_period"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/example_serving"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:text="最短換宿時限" />
+
+                        <TextView
+                            android:id="@+id/show_Period"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_Serving"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/example_area"
+                            android:text=":" />
+
+                        <TextView
+                            android:id="@+id/example_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/example_period"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:text="換宿月份" />
+
+                        <TextView
+                            android:id="@+id/show_Months"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_Period"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/example_area"
+                            android:text=":" />
+
+                        <TextView
+                            android:id="@+id/example_worktime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/example_time"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:text="每日工作時數" />
+
+                        <TextView
+                            android:id="@+id/show_Time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_Months"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/example_area"
+                            android:text=":" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_below="@id/example_worktime"
+                            android:layout_marginTop="166dp"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/example_worktime"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            android:text="需求人數" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/example_worktime"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="56dp"
+                            android:text="備註文字" />
+
+                        <TextView
+                            android:id="@+id/show_People"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/example_worktime"
+
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="270dp"
+                            android:layout_marginBottom="-1dp"
+                            android:text=":" />
+
+                        <TextView
+                            android:id="@+id/show_Remark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/example_worktime"
+
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginEnd="270dp"
+                            android:layout_marginBottom="-1dp"
+                            android:text=":" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="首頁"/>
+
+    <item
+        android:id="@+id/navigation_publish"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="刊登資訊" />
+
+    <item
+        android:id="@+id/navigation_chatroom"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="聊天室"/>
+
+    <item
+        android:id="@+id/navigation_personal"
+        android:icon="@drawable/ic_more_horiz_black_24dp"
+        android:title="基本資料"/>
+
+</menu>
